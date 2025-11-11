@@ -1,2 +1,15 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        // This is the line that fixes the error for 'ftcontrol' and 'fullpanels'
+        maven { url "https://mymaven.bylazar.com/releases" }
+        // This line is needed for other libraries like FTCLib or PedroPathing
+        maven { url "https://jitpack.io" }
+    }
+}
+
+// These lines include your project modules
 include ':FtcRobotController'
 include ':TeamCode'
