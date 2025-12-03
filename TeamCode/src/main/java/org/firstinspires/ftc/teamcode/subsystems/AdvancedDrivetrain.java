@@ -123,6 +123,9 @@ public class AdvancedDrivetrain extends SubsystemBase {
     public double getHeading() {
         return imu.getRobotYawPitchRollAngles().getYaw(AngleUnit.RADIANS);
     }
+    public void resetHeading() {
+        imu.resetYaw();
+    }
 
     public Pose2d getCurrentPose() { return currentPose; }
 
