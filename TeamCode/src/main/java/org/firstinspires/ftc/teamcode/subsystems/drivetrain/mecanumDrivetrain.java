@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.teamcode.Archive.Libs.AR;
+package org.firstinspires.ftc.teamcode.subsystems.drivetrain;
 
 import com.qualcomm.hardware.rev.RevHubOrientationOnRobot;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
@@ -6,8 +6,9 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.IMU;
 
 import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
+import org.firstinspires.ftc.teamcode.config.robotConstants;
 
-public class MecanumDrive_5518 {
+public class mecanumDrivetrain {
     private double y; //value of y on joystick
     private double x; //value of x on joystick
     private double rx; //rotation value
@@ -36,13 +37,13 @@ public class MecanumDrive_5518 {
 
     LinearOpMode bot;
 
-    public MecanumDrive_5518(LinearOpMode iBot)
+    public mecanumDrivetrain(LinearOpMode iBot)
     {
         bot = iBot;
-        frontLeft = iBot.hardwareMap.dcMotor.get("left_front_mtr");
-        frontRight = iBot.hardwareMap.dcMotor.get("right_front_mtr");
-        backLeft = iBot.hardwareMap.dcMotor.get("left_back_mtr");
-        backRight = iBot.hardwareMap.dcMotor.get("right_back_mtr");
+        frontLeft = iBot.hardwareMap.dcMotor.get(robotConstants.DriveTrain.LEFT_FRONT_MOTOR);
+        frontRight = iBot.hardwareMap.dcMotor.get(robotConstants.DriveTrain.RIGHT_FRONT_MOTOR);
+        backLeft = iBot.hardwareMap.dcMotor.get(robotConstants.DriveTrain.LEFT_BACK_MOTOR);
+        backRight = iBot.hardwareMap.dcMotor.get(robotConstants.DriveTrain.RIGHT_BACK_MOTOR);
 
         frontLeft.setDirection(DcMotor.Direction.REVERSE);
         backLeft.setDirection(DcMotor.Direction.REVERSE);

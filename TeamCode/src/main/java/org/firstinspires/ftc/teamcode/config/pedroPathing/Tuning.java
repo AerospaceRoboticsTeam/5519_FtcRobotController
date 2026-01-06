@@ -1,11 +1,11 @@
-package org.firstinspires.ftc.teamcode.config;
+package org.firstinspires.ftc.teamcode.config.pedroPathing;
 
-import static org.firstinspires.ftc.teamcode.config.Tuning.changes;
-import static org.firstinspires.ftc.teamcode.config.Tuning.drawOnlyCurrent;
-import static org.firstinspires.ftc.teamcode.config.Tuning.draw;
-import static org.firstinspires.ftc.teamcode.config.Tuning.follower;
-import static org.firstinspires.ftc.teamcode.config.Tuning.stopRobot;
-import static org.firstinspires.ftc.teamcode.config.Tuning.telemetryM;
+import static org.firstinspires.ftc.teamcode.config.pedroPathing.Tuning.changes;
+import static org.firstinspires.ftc.teamcode.config.pedroPathing.Tuning.drawOnlyCurrent;
+import static org.firstinspires.ftc.teamcode.config.pedroPathing.Tuning.draw;
+import static org.firstinspires.ftc.teamcode.config.pedroPathing.Tuning.follower;
+import static org.firstinspires.ftc.teamcode.config.pedroPathing.Tuning.stopRobot;
+import static org.firstinspires.ftc.teamcode.config.pedroPathing.Tuning.telemetryM;
 
 import com.bylazar.configurables.PanelsConfigurables;
 import com.bylazar.configurables.annotations.Configurable;
